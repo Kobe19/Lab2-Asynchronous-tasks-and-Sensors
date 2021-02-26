@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <PreferenceCategory android:title="Cache">
+
+            <SwitchPreference
+                android:title="Caching Image"
+                android:key="cache"
+                android:defaultValue="false"
+                android:summaryOn="The cache is On"
+                android:summaryOff="The cache is Off"/>
+        </PreferenceCategory>
+
+    <PreferenceCategory android:title="Choose preference tag from Flickr">
+
+        <ListPreference
+            android:key="TAG"
+            android:defaultValue="false"
+            android:title="Available Tags"
+            android:entries="@array/items_names"
+            android:entryValues="@array/items_values" />
+    </PreferenceCategory>
+</PreferenceScreen>
